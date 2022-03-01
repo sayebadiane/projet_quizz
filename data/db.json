@@ -1,0 +1,22 @@
+{
+    "users":[
+        {
+            "nom":"badiane",
+            "prenom":"saye",
+            "login":"sayesyll21@gmail.com",
+            "password":"saye",
+            "role":"role_admin",
+            "score":"0"
+         },
+         {
+            "nom":"diop",
+            "prenom":"lang",
+            "login":"langdiop21@gmail.com",
+            "password":"lang",
+            "role":"role_jour",
+            "score":"10"
+         }
+
+    ]     
+
+}
