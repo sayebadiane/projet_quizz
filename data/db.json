@@ -1,6 +1,14 @@
 {
     "users":[
         {
+            "nom":"diop",
+            "prenom":"lang",
+            "login":"lang@gmail.com",
+            "password":"lang",
+            "role":"role_joueur",
+            "score":"10"
+         },
+         {
             "nom":"badiane",
             "prenom":"saye",
             "login":"sayesyll21@gmail.com",
@@ -9,12 +17,12 @@
             "score":"0"
          },
          {
-            "nom":"diop",
-            "prenom":"lang",
-            "login":"langdiop21@gmail.com",
-            "password":"lang",
-            "role":"role_jour",
-            "score":"10"
+            "nom":"badiane",
+            "prenom":"saye",
+            "login":"sayesyll@gmail.com",
+            "password":"syll",
+            "role":"role_admin",
+            "score":"0"
          }
 
     ]     

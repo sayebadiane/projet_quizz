@@ -1,3 +1,92 @@
 body{
-    background-color: rebeccapurple;
+    background-image:url("../img/img-bg.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+.parent{
+    display: flex;
+    justify-content: center;
+    margin-top: 7%; 
+
+}
+.main{
+    width: 35%;
+    height: 50vh;
+    background-color:white;
+    /* display: flex; */
+
+}
+form{
+    width: 100%;
+    height: 100%;
+}
+.forme1{
+    width:100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 20% 55% 25%;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2%;
+    padding-right: 2%;
+    background-color: rgb(81,191,208);
+    color: white;
+ 
+}
+.header p{
+    font-size: 2em;
+}
+.midle{
+    display: grid;
+    grid-template-rows:10% 40% 40% ;
+    
+}
+.end{
+    display: flex;
+    justify-content: space-between;
+}
+.input1 input{
+   border: 1px solid black;
+   width: 90%;
+   height: 60%;
+   margin-top: 3%;
+   margin-left: 5%; 
+   font-size: 1.5em;
+}
+.affiche_error{
+    text-align: center;
+    font-size: 2em;
+}
+.input1{
+    display: grid;
+    grid-template-rows: 80% 10%;
+   
+}
+.input1 small{
+    font-size: 1.5em;
+    margin-left: 4%;
+    margin-top: 1px;
+}
+button{
+    margin-left: 5%;
+    width: 20%;
+    height: 40%;
+    border-radius: 5px;
+}
+a{
+    margin-right: 30%;
+    text-decoration: none;
+    color: black;
+    font-size: 1.5em;
+}
+.entete{
+    width: 100%;
+    height: 10%;
+    background-color: red;
+    text-align: center;
 }

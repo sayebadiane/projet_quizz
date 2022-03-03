@@ -1,28 +1,57 @@
-<?php
+<?php 
+require_once(PATH_VIEWS."include".DIRECTORY_SEPARATOR."header.html.php")
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="stylesheet" href="<?=WEB_ROOT."css".DIRECTORY_SEPARATOR."style.connexion.css"?>"
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>projet</title>
-</head>
-<body>
-    <form action="<?= WEB_ROOT ?>" method="POST">
-    <input type="hidden" name="controller" value="securite">
-    <input type="hidden" name="action" value="connexion">
-    <div class="form1">
-        <label for="">Donner votre login</label>
-        <input type="text" name="login" id="login">
-        <label for="">Donner votre password</label>
-        <input type="text" name="password" id="password">
-        <button type="submit">connexion</button>
-        <!-- <button type="submit">s' inscrire</button> -->
+    <div class="parent">
+        <div class="main">
+            <form action="<?= WEB_ROOT ;?>" method="POST">
+                <div class="forme1">
+                    <input type="hidden" name="controller" value="securite">
+                    <input type="hidden" name="action" value="connexion">
+                    <div class="header">
+                        <p>Login Form</p>
+                        <p>x</p>
+
+                    </div>
+
+                    <div class="midle">
+                        <div class="affiche_error">
+                            <?php  if(isset($_SESSION[KEY_ERRORS]['connexion'])):?>
+                            <small style="color:red"><?= $_SESSION[KEY_ERRORS]['connexion'];?> </small>
+                            <?php endif ?>
+                        </div> 
+                        <div class="input1">
+                            <input type="text" name="login" id="login" placeholder="login">
+                            <?php  if(isset($_SESSION[KEY_ERRORS]['login'])):?>
+                            <small style="color:red"><?= $_SESSION[KEY_ERRORS]['login'];?> </small>
+                            <?php endif ?>
+                        </div>
+                        <div class="input1">
+                            <input type="password" name="password" id="password"  placeholder="password">
+                        </div>
+                        
+                    </div>
+                    <div class="end">
+                        <button type="submit">connexion</button>
+                        <a href="#">s'inscrire pour jouer</a>
+
+                    </div>
+                
+                </div>
+            
+
+            </form>  
+        
+
         </div>
-    
-    </form>
-    
-</body>
-</html> 
+    </div>
+
+<?php
+
+if(isset($_SESSION[KEY_ERRORS])){
+    unset($_SESSION[KEY_ERRORS]);
+}
+
+?>
+<?php 
+require_once(PATH_VIEWS."include".DIRECTORY_SEPARATOR."footer.html.php")
+?>
