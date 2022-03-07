@@ -29,6 +29,11 @@ if($_SERVER["REQUEST_METHOD"]=="GET"){
 
         }
     }
+    if($_REQUEST['action']=="inscription"){
+        require_once(PATH_VIEWS."securite".DIRECTORY_SEPARATOR."inscription.html.php");
+
+
+    }
     else{
         require_once(PATH_VIEWS."securite".DIRECTORY_SEPARATOR."connexion.html.php");
 

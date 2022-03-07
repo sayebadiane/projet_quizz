@@ -9,7 +9,7 @@ function verifie_password_login($login ,$password){
     }
     return [];
 }
-function find_users(string  $role){
+function find_users(string  $role):array{
     $users=json_to_array("users");
     $result=[];
     foreach($users as $user){

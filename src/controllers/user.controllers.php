@@ -1,4 +1,5 @@
 <?php
+ini_set('display_errors', 'on');
 // session_start();
 require_once(PATH_SRC."modeles".DIRECTORY_SEPARATOR."user.model.php");
 if($_SERVER["REQUEST_METHOD"]=="POST"){
@@ -17,6 +18,13 @@ if($_SERVER['REQUEST_METHOD']=='GET'){
             exit();
         }
         if($_GET['action'] == "accueil"){
+           if(is_admin()){
+                liste_joueur();
+            }
+            elseif(is_joueur()){
+                jeu();
+
+            }
  
              require_once(PATH_VIEWS."user".DIRECTORY_SEPARATOR."accueil.html.php");
         }
@@ -28,9 +36,17 @@ if($_SERVER['REQUEST_METHOD']=='GET'){
     }
 } 
 function liste_joueur(){
-    $data= find_users(role_jour); 
-    require_once(PATH_VIEWS."user".DIRECTORY_SEPARATOR."liste.joueur.html.php");
-    
-
+    ob_start();
+        $data= find_users(role_joueur); 
+        require_once(PATH_VIEWS."user".DIRECTORY_SEPARATOR."liste.joueur.html.php");
+    $content_for_views=ob_get_clean();
+    require_once(PATH_VIEWS."user".DIRECTORY_SEPARATOR."accueil.html.php");
+}
+function jeu(){
+    ob_start();
+        require_once(PATH_VIEWS."user".DIRECTORY_SEPARATOR."jeu.html.php");
+    $content_for_views=ob_get_clean();
+    require_once(PATH_VIEWS."user".DIRECTORY_SEPARATOR."accueil.html.php");
+   
 
 }

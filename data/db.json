@@ -21,7 +21,15 @@
             "prenom":"saye",
             "login":"sayesyll@gmail.com",
             "password":"syll",
-            "role":"role_admin",
+            "role":"role_joueur",
+            "score":"0"
+         },
+         {
+            "nom":"soume",
+            "prenom":"nabou",
+            "login":"sayesy@gmail.com",
+            "password":"syll",
+            "role":"role_joueur",
             "score":"0"
          }
 

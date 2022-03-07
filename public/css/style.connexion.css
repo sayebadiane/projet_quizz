@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+:root{
+    --success-color: #2ecc71;
+    --error-color: #e74c3c;
+}
 body{
     background-image:url("../img/img-bg.jpg");
     height: 100vh;
@@ -5,6 +11,7 @@ body{
     background-size: cover;
     display: flex;
     flex-direction: column;
+    margin-top: 0px;
 }
 .parent{
     display: flex;
@@ -68,25 +75,37 @@ form{
    
 }
 .input1 small{
-    font-size: 1.5em;
+    font-size: 1em;
     margin-left: 4%;
     margin-top: 1px;
 }
-button{
+.end button{
     margin-left: 5%;
-    width: 20%;
+    width: 24%;
     height: 40%;
     border-radius: 5px;
+    background-color:rgb(81,191,208);
+    color: white;
+    font-size: 1.5em;
+    border: none;
 }
 a{
     margin-right: 30%;
     text-decoration: none;
-    color: black;
+    color: rgb(122, 116, 116);
     font-size: 1.5em;
+    margin-top: 2%;
 }
 .entete{
     width: 100%;
     height: 10%;
-    background-color: red;
+    background-color:rgb(5,36,38) ;
     text-align: center;
+    color: white;
 }
+.error {
+   background-color: red;  
+   border: 16px solid red;
+
+}
+

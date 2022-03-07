@@ -1,0 +1,88 @@
+.main_accueil{
+    background-color: white; 
+    width: 96%;
+    height: 96vh;
+    margin-top: 2%;
+    margin-left: 2%;
+    display: grid;
+    grid-template-rows: 15% 83%;
+}
+.entete_accueil{
+background-color: rgb(81,191,208);;
+display: flex;
+justify-content: space-between;
+
+/* padding-top: 0px; */
+}
+.entete_accueil button{
+   width: 10%;
+   height: 5vh;
+   border: none;
+   margin-top: 1%;
+   margin-right: 2%;
+   color: white;
+   background-color: rgb(49, 189, 189);
+   font-size: 1.5em;
+} 
+.entete_accueil h1{
+    color: white;
+    text-align: center;
+    margin-left: 30%;
+    margin-top: 2%;
+
+}
+.midle_accueil{
+    display: grid;
+    grid-template-columns: 33% 55%;
+    justify-content: space-between;
+
+}
+.midle_guache{
+    margin-left: 7%;
+    height: 70%;
+    margin-top: 10%;
+    display: grid;
+    grid-template-rows: 40% 60%;
+
+}
+.midle_guache_haut{
+    background-color: aqua;
+
+}
+.midle_guache_bat{
+    display: grid;
+    grid-template-rows: 25% 25% 25% 25%;
+    padding-top: 6%;
+    font-size: 1em;
+    padding-left: 4%;
+    
+
+}
+.midle_guache_bat p{
+    font-size: 2em;
+    margin-top: 1%;
+}
+.midle_guache_1{
+display: flex;
+justify-content: space-between;
+margin-right: 6%;
+}
+.midle_guache_2{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 6%;
+}
+.midle_guache_3{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 6%;
+}
+.midle_guache_4{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 6%;
+}
+.midle_droite{
+    margin-right: 20%;
+}
+
