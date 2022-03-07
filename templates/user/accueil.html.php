@@ -4,7 +4,7 @@ require_once(PATH_VIEWS."include".DIRECTORY_SEPARATOR."header.html.php")
 <div class="main_accueil">
     <div class="entete_accueil">
         <h1>CRÉER ET PARAMETRER VOS QUIZZ</h1>
-        <button type="text" onclick="window.location.href='<?=WEB_ROOT."?controller=securite&action=deconnexion"?>';"> Deconnexion</button>
+        <button type="submi" onclick="window.location.href='<?=WEB_ROOT."?controller=securite&action=deconnexion"?>';"> Deconnexion</button>
     </div>
     <div class="midle_accueil">
         <div class="midle_guache">
